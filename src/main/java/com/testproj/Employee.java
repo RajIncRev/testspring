@@ -32,6 +32,12 @@ public class Employee {
 	@Column(name = "employee_name")
 	private String employeeName;
 	
+	/*
+	 * Employee Name
+	 */
+	@Column(name = "employee_salary")
+	private String employeeSalary;
+	
 	
 	/*
 	* This is a test code
