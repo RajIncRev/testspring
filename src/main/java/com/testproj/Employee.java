@@ -31,9 +31,13 @@ public class Employee {
 	 */
 	@Column(name = "employee_name")
 	private String employeeName;
-	
+
+	/*
+	 * Employee Salary
+	 */
 	@Column(name = "employee_salary")
 	private String employeeSalary;
+	
 	/*
 	* This is a test code
 	*/
