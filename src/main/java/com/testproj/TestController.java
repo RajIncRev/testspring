@@ -35,4 +35,11 @@ public class TestController {
 		
 	}
 	
+	@RequestMapping("employee/1")
+	public Employee getEmployeeInfo() {
+		Employee emp = empRepository.findOne();
+		return emp;
+		
+	}
+	
 }
