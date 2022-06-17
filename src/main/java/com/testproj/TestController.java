@@ -42,5 +42,11 @@ public class TestController {
 		return emp.get();
 		
 	}
+	@RequestMapping("employee/detail")
+	public Employee getEmployeeDetailInfo() {
+		Optional<Employee> emp = empRepository.findById(2);
+		return emp.get();
+		
+	}
 	
 }
