@@ -1,6 +1,7 @@
 package com.testproj;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -37,8 +38,8 @@ public class TestController {
 	
 	@RequestMapping("employee/1")
 	public Employee getEmployeeInfo() {
-		Employee emp = empRepository.findOne();
-		return emp;
+		Optional<Employee> emp = empRepository.findById(1);
+		return emp.get();
 		
 	}
 	
